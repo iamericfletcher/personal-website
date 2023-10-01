@@ -5,16 +5,31 @@
     <meta content="width=device-width"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <meta name="description" content="Eric Fletcher: Executive Assistant to the Dean at MIT's Schwarzman College of Computing. Get to know more about me and my interests here.">
+    <meta content="Eric Fletcher: Executive Assistant to the Dean at MIT's Schwarzman College of Computing. Get to know more about me and my interests here."
+          name="description">
     <title>Hi, I'm Eric!</title>
     <link href="dist/output.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="src/images/favicon_package_v0.16%20(2)/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_package_v0.16%20(2)/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_package_v0.16%20(2)/favicon-16x16.png">
-    <link rel="manifest" href="src/images/favicon_package_v0.16%20(2)/site.webmanifest">
-    <link rel="mask-icon" href="src/images/favicon_package_v0.16%20(2)/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link href="src/images/favicon_package_v0.16%20(2)/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="src/images/favicon_package_v0.16%20(2)/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="src/images/favicon_package_v0.16%20(2)/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="src/images/favicon_package_v0.16%20(2)/site.webmanifest" rel="manifest">
+    <link color="#5bbad5" href="src/images/favicon_package_v0.16%20(2)/safari-pinned-tab.svg" rel="mask-icon">
+    <meta content="#da532c" name="msapplication-TileColor">
+    <meta content="#ffffff" name="theme-color">
+    <!--  Essential META Tags -->
+    <meta content="Hi, I'm Eric!" property="og:title">
+    <meta content="Eric Fletcher: Executive Assistant to the Dean at MIT's Schwarzman College of Computing. Get to know more about me and my interests here."
+          property="og:description"/>
+    <meta content="https://github.com/iamericfletcher/personal-website/assets/64165327/8e782d9b-707d-4b8d-97fd-a8c9ccbdad62"
+          property="og:image">
+    <meta content="https://iamericfletcher.com" property="og:url">
+    <meta content="summary_large_image" name="twitter:card">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta content="Eric Fletcher: Executive Assistant to the Dean at MIT's Schwarzman College of Computing. Get to know more about me and my interests here."
+          property="og:description">
+    <meta content="Eric Fletcher's Personal Website" property="og:site_name">
+    <meta content="Eric Fletcher's headshot" name="twitter:image:alt">
     <script>
         // It's best to inline this in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes
         if (
@@ -32,7 +47,11 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q564LW8CKF"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'G-Q564LW8CKF');
@@ -41,10 +60,10 @@
 <div class="flex flex-col justify-center w-full h-full sm:min-h-screen sm:min-w-max sm:bg-white sm:dark:bg-stone-950">
     <div class="flex flex-col w-full h-full sm:h-fit sm:max-w-lg md:max-w-2xl sm:mx-auto  bg-white dark:bg-slate-800 sm:rounded-lg px-6 py-8 sm:ring-1 sm:ring-slate-900/5 sm:shadow-xl">
         <div class="flex justify-center ">
-            <button class="flex text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+            <button aria-label="Toggle between light and dark theme"
+                    class="flex text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
                     id="theme-toggle"
                     type="button"
-                    aria-label="Toggle between light and dark theme"
             >
                 <svg
                         class="w-5 h-5 hidden"
@@ -76,7 +95,8 @@
             </button>
         </div>
         <div class="flex justify-center">
-            <img class="w-[200px] h-[300px]" alt="Eric Fletcher's Headshot with Circle Crop Applied" src="src/images/2023-09-30-headshot-circle-crop-smaller%20(1).png">
+            <img alt="Eric Fletcher's Headshot with Circle Crop Applied" class="w-[200px] h-[300px]"
+                 src="src/images/2023-09-30-headshot-circle-crop-smaller%20(1).png">
         </div>
         <div class="flex flex-col text-center ">
             <h3 class="text-indigo-500 text-3xl font-medium tracking-wide">Eric Fletcher</h3>
@@ -145,9 +165,9 @@
             <p class="text-sm text-gray-500 dark:text-gray-400">Made with ❤️ by Eric Fletcher</p>
         </footer>
     </div>
-<!--    <footer class="flex justify-center mt-6 bg-none dark:bg-slate-800 sm:dark:bg-stone-950">-->
-<!--        <p class="text-sm text-gray-500 dark:text-gray-400">Made with ❤️ by Eric Fletcher</p>-->
-<!--    </footer>-->
+    <!--    <footer class="flex justify-center mt-6 bg-none dark:bg-slate-800 sm:dark:bg-stone-950">-->
+    <!--        <p class="text-sm text-gray-500 dark:text-gray-400">Made with ❤️ by Eric Fletcher</p>-->
+    <!--    </footer>-->
 </div>
 
 <script src="src/index.js"></script>
