@@ -4,21 +4,25 @@ const linkedinLightIcon = document.getElementById('linkedin-light-icon');
 const linkedinDarkIcon = document.getElementById('linkedin-dark-icon');
 const githubLightIcon = document.getElementById('github-light-icon');
 const githubDarkIcon = document.getElementById('github-dark-icon');
-const substackLightIcon = document.getElementById('substack-light-icon');
-const substackDarkIcon = document.getElementById('substack-dark-icon');
+// const substackLightIcon = document.getElementById('substack-light-icon');
+// const substackDarkIcon = document.getElementById('substack-dark-icon');
+const instagramLightIcon = document.getElementById('instagram-light-icon');
+const instagramDarkIcon = document.getElementById('instagram-dark-icon');
 
 // Change the icons inside the button based on previous settings
 if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     themeToggleLightIcon.classList.remove('hidden');
     linkedinDarkIcon.classList.remove('hidden');
     githubDarkIcon.classList.remove('hidden');
-    substackDarkIcon.classList.remove('hidden');
+    // substackDarkIcon.classList.remove('hidden');
+    instagramDarkIcon.classList.remove('hidden');
 
 } else {
     themeToggleDarkIcon.classList.remove('hidden');
     linkedinLightIcon.classList.remove('hidden');
     githubLightIcon.classList.remove('hidden');
-    substackLightIcon.classList.remove('hidden');
+    // substackLightIcon.classList.remove('hidden');
+    instagramLightIcon.classList.remove('hidden');
 }
 
 const themeToggleBtn = document.getElementById('theme-toggle');
@@ -32,8 +36,10 @@ themeToggleBtn.addEventListener('click', function() {
     linkedinDarkIcon.classList.toggle('hidden');
     githubLightIcon.classList.toggle('hidden');
     githubDarkIcon.classList.toggle('hidden');
-    substackLightIcon.classList.toggle('hidden');
-    substackDarkIcon.classList.toggle('hidden');
+    // substackLightIcon.classList.toggle('hidden');
+    // substackDarkIcon.classList.toggle('hidden');
+    instagramLightIcon.classList.toggle('hidden');
+    instagramDarkIcon.classList.toggle('hidden');
 
     // if set via local storage previously
     if (localStorage.getItem('color-theme')) {
